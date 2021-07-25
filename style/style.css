@@ -56,7 +56,7 @@ body {
 }
 
 .section {
-  padding-top: 8rem;
+  padding-top: 7rem;
   padding-bottom: 6rem;
 }
 
@@ -64,8 +64,11 @@ body {
   display: inline-block;
   border: none;
   background-color: #4C92D0;
-  font-size: 1.6rem;
-  padding: 1rem 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  letter-spacing: 2px;
 }
 
 .welcome__container {
@@ -90,6 +93,9 @@ body {
   font-size: 1.9rem;
   letter-spacing: 2px;
   padding-bottom: 2.5rem;
+}
+.welcome__span {
+  padding-left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
