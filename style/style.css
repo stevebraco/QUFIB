@@ -45,8 +45,34 @@ td, th {
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "Inter", sans-serif;
+  height: 100%;
+  color: #292929;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  padding-bottom: 5rem;
+}
+
+p {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #292929;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .container {
@@ -71,6 +97,9 @@ body {
   letter-spacing: 2px;
 }
 
+.welcome {
+  position: relative;
+}
 .welcome__container {
   display: flex;
   flex-wrap: wrap;
@@ -96,6 +125,36 @@ body {
 }
 .welcome__span {
   padding-left: 2rem;
+}
+
+.qufib {
+  position: relative;
+}
+.qufib__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.qufib__content {
+  max-width: 60rem;
+}
+.qufib__figure {
+  max-width: 40%;
+}
+.qufib__figure::after {
+  content: "";
+  background-color: #4C92D0;
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.qufib__img {
+  background: white;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
