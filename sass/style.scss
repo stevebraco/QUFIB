@@ -14,6 +14,9 @@ body {
 h2 {
     font-size: 4.5rem;
     font-weight: 700;
+}
+
+.heading {
     padding-bottom: 5rem;
 }
 
@@ -25,6 +28,10 @@ p {
 a {
     text-decoration: none;
     color: rgb(41, 41, 41);
+}
+
+img {
+    object-fit: contain;
 }
 
 .uppercase {
@@ -120,4 +127,92 @@ a {
         background: white;
         border-radius: 50%;
     }
+}
+
+.work {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__content {
+       max-width: 57rem;
+    }
+
+    &__figure {
+        max-width: 30%;
+    }
+
+    &__text {
+        padding-bottom: 2rem;
+    }
+}
+
+.offer {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        background-color: #4C92D0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &__wrapper {
+        text-align: center;
+        padding-bottom: 7rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+
+    &__figure {
+        position: relative;
+        border-radius: 3rem;
+        background: white;
+        &::before {
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+        content: "\f004";
+        font-size: 2rem;
+        color: #4C92D0;
+        position: absolute;
+
+        }
+        
+    }
+    &__figcaption {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    &__display {
+        display: block;
+    }
+
+    &__img {
+        padding-bottom: 2rem;
+
+    }
+
+    &__connecteur {
+        padding: 5rem 3rem;
+
+    }
+    &__print {
+        padding: 5rem; 
+    }
+    
 }

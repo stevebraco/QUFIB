@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
@@ -58,6 +59,9 @@ body {
 h2 {
   font-size: 4.5rem;
   font-weight: 700;
+}
+
+.heading {
   padding-bottom: 5rem;
 }
 
@@ -69,6 +73,10 @@ p {
 a {
   text-decoration: none;
   color: #292929;
+}
+
+img {
+  object-fit: contain;
 }
 
 .uppercase {
@@ -155,6 +163,79 @@ a {
 .qufib__img {
   background: white;
   border-radius: 50%;
+}
+
+.work__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.work__content {
+  max-width: 57rem;
+}
+.work__figure {
+  max-width: 30%;
+}
+.work__text {
+  padding-bottom: 2rem;
+}
+
+.offer {
+  position: relative;
+}
+.offer::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background-color: #4C92D0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.offer__wrapper {
+  text-align: center;
+  padding-bottom: 7rem;
+}
+.offer__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.offer__figure {
+  position: relative;
+  border-radius: 3rem;
+  background: white;
+}
+.offer__figure::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  font-size: 2rem;
+  color: #4C92D0;
+  position: absolute;
+}
+.offer__figcaption {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.offer__display {
+  display: block;
+}
+.offer__img {
+  padding-bottom: 2rem;
+}
+.offer__connecteur {
+  padding: 5rem 3rem;
+}
+.offer__print {
+  padding: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
